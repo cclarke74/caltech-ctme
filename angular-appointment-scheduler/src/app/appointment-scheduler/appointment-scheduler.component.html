@@ -1,0 +1,31 @@
+<div id="appt;" style="text-align: center;">
+    <h3>Appointment Request</h3>
+    <form id="appointmentForm" [formGroup]="appointmentForm" (ngSubmit)="sendAppointment()">
+      <label for="time">Time:</label>
+      <select id="time" formControlName="time">
+        <option value="" selected disabled>Select a Time</option>
+        <option value="9:00 AM">9:00 AM</option>
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="1:00 PM">1:00 PM</option>
+        <option value="2:00 PM">2:00 PM</option>
+        <option value="3:00 PM">3:00 PM</option>
+        <option value="4:00 PM">4:00 PM</option>
+       
+      </select>
+    
+      <br><br>
+      <label for="day">Day:</label>
+      <select id="day" formControlName="day">
+        <option value="" selected disabled>Select a day</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+      </select>
+      <br><br>
+      <button type="submit" style="background-color: cornflowerblue" [disabled]="!appointmentForm.valid">Submit</button>
+    </form>
+  </div>

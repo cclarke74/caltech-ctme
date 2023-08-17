@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse; border-radius: 5px;
+    margin-left: auto; 
+    margin-right: auto;
+   
+}
+th, td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+
+td.open {
+  background-color: #f1f8f1;
+  cursor: pointer;
+}
+
+td.requested {
+  background-color: #f00;
+}

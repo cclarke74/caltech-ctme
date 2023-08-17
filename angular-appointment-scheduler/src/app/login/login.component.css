@@ -1,0 +1,13 @@
+.card{
+    margin-top: 30px;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+label,input{
+    width: 100%;
+    margin-bottom: 10px;
+}

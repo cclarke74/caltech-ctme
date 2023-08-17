@@ -1,0 +1,78 @@
+<table id="schedule">
+  <tr style="background-color:#b3ffb3">
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+  <tr *ngFor="let data of appointmentDetails">
+
+    <td style="background-color:#b3ffb3">{{data.time}}</td>
+    <td class="open" *ngFor="let day of data.days" [ngClass]="{'requested': day.isScheduled}"></td>
+  </tr>
+  <!-- <tr>
+    <td style="background-color:#b3ffb3">10:00 AM</td>
+    <td class="open" style="text-decoration-line: line-through; color: black;"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+  </tr>
+
+  <tr>
+    <td style="background-color:#b3ffb3">11:00 AM</td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+  </tr>
+
+  <tr>
+    <td style="background-color:#b3ffb3">12:00 PM</td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+  </tr>
+
+  <tr>
+    <td style="background-color:#b3ffb3">1:00 PM</td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+  </tr>
+
+  <tr>
+    <td style="background-color:#b3ffb3">2:00 PM</td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+  </tr>
+
+  <tr>
+    <td style="background-color:#b3ffb3">3:00 PM</td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+  </tr>
+
+  <tr>
+    <td style="background-color:#b3ffb3">4:00 PM</td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+    <td class="open"></td>
+  </tr> -->
+
+</table>
